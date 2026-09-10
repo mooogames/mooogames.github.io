@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponga Ponga Uh! — Download</title>
+    <style>
+        body {
+            background: #0a0a2e;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 { font-size: 28px; margin-bottom: 10px; }
+        p { color: #aaa; font-size: 16px; margin-bottom: 30px; }
+        .buttons { display: flex; flex-direction: column; gap: 15px; }
+        a {
+            display: block;
+            padding: 16px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .apple { background: #333; color: white; }
+        .google { background: #01875f; color: white; }
+        .apple:hover { background: #555; }
+        .google:hover { background: #02a876; }
+    </style>
+    <script>
+        var userAgent = navigator.userAgent || navigator.vendor;
+        if (/iPad|iPhone|iPod/.test(userAgent)) {
+            window.location.href = "https://apps.apple.com/app/ponga-ponga-uh/id6777279175";
+        } else if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.mooogames.pongapongauh";
+        }
+    </script>
+</head>
+<body>
+    <h1>🐵 Ponga Ponga Uh!</h1>
+    <p>Save the astro-monkeys from space!</p>
+    <div class="buttons">
+        <a class="apple" href="https://apps.apple.com/app/ponga-ponga-uh/id6777279175">
+            Download on App Store
+        </a>
+        <a class="google" href="https://play.google.com/store/apps/details?id=com.mooogames.pongapongauh">
+            Get it on Google Play
+        </a>
+    </div>
+    <p style="margin-top: 40px; font-size: 12px; color: #666;">Moøö Games — São Paulo, Brazil</p>
+</body>
+</html>
